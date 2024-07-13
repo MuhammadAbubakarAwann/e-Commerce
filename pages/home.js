@@ -18,16 +18,16 @@ const Home = () => (
     </Head>
     <main >
       <section>
-        <div className="p-12">
+        <div className="px-4 py-6 sm:px-6 sm:py-8 md:px-12 md:py-12">
           <Banner />
         </div>
-        <div className="pb-12 pt-0 px-12 flex justify-center items-center flex-col md:flex-row gap-10 ">
+        <div className="px-4 pt-0 pb-6 sm:px-6 sm:pb-8 md:px-12 md:pb-12 flex justify-center items-center flex-col md:flex-row gap-5 md:gap-10">
           <Card1 />
           <Card2 />
           <Card3 />
         </div>
-
       </section>
+
       <section>
         <h2 className="text-[40px] font-bold  text-center text-[#00AAC2] mb-8">
           Why You Choose Us!
