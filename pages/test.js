@@ -2,7 +2,7 @@ import React from 'react'
 
 const test = () => {
   return (
-    <div>ali and arham testing</div>
+    <div>ali and arham abubakar asad</div>
   )
 }
 
