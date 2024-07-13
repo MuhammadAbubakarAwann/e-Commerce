@@ -1,5 +1,5 @@
-// components/Layout.jsx
-import Header from './header/Header';
+
+import Header from './main-section/header/Header';
 
 const Layout = ({ children }) => (
   <div>
