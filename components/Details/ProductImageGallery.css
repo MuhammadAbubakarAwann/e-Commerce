@@ -1,0 +1,40 @@
+/* components/ProductImageGallery.css */
+
+.main-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 400px; /* Adjust the height as per your design */
+    width: 100%;
+  }
+  
+  .main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+  }
+  
+  .main-image:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+  }
+  
+  .thumbnail-image {
+    width: calc(25% - 8px); /* Adjust thumbnail width */
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+  
+  .flex {
+    display: flex;
+  }
+  
+  .space-x-2 > * + * {
+    margin-left: 0.5rem;
+  }
+  
+  .mt-4 {
+    margin-top: 1rem;
+  }
+  

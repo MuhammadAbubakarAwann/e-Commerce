@@ -7,6 +7,10 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors:{
+        primary:'#01A8BE',
+        secondary:'#092428',
+      },
       fontFamily: {
         montserrat: ['Montserrat', 'sans-serif'],
         krona: ['"Krona One"', 'sans-serif'],
@@ -14,5 +18,7 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
 };
