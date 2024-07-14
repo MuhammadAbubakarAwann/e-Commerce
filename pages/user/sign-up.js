@@ -1,16 +1,16 @@
 
 import Head from 'next/head';
 import "../../src/app/globals.css";
-import SignIn from '../../components/auth/SignIn';
+import SignUp from '../../components/auth/SignUp';
 
-const Sign_In = () => (
+const Sign_Up = () => (
   <>
     <Head>
       <title>user-signin</title>
     </Head>
     <main >
-      <SignIn/>
+      <SignUp/>
     </main></>
 );
 
-export default Sign_In;
+export default Sign_Up;
