@@ -1,12 +1,13 @@
 import React from 'react'
 import Sidebar from '../../components/User/Sidebar'
+import Orders  from '../../components/User/Orders'
 import "../../src/app/globals.css"
 const reviews = () => {
   return (
-    <div className='flex'>
+    <div className=''>
     <Sidebar/>
     <div className='flex-grow'>
-    <p>Orders</p>
+    <Orders/>
     </div>
 </div>
   )
