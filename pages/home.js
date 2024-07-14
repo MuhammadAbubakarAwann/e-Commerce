@@ -9,6 +9,7 @@ import Features from '../components/features-newsLetter/Features';
 import Newsletter from '../components/features-newsLetter/NewsLetter';
 import End from '../components/Footer/End';
 import Banner from '../components/main-section/banner/Banner';
+import CardsWrapper from '../components/main-section/cards/CardsWrapper';
 
 const Home = () => (
   <Layout>
@@ -21,11 +22,8 @@ const Home = () => (
         <div className="px-2 py-4 sm:px-3 sm:py-3 md:px-5 md:py-5">
           <Banner />
         </div>
-        <div className="px-2 pt-0 pb-6 sm:px-6 sm:pb-8 md:px-5 md:pb-12 flex justify-center items-center flex-col md:flex-row gap-4 md:gap-6">
-          <Card1 />
-          <Card2 />
-          <Card3 />
-          <Card3 />
+        <div className="px-2 pt-0 pb-6 sm:px-6 sm:pb-8 md:px-5 md:pb-12 ">
+          <CardsWrapper/>
         </div>
       </section>
 

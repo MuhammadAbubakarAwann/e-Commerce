@@ -1,11 +1,10 @@
-// components/Sec1.jsx
 import React from 'react';
 import Image from 'next/image';
 
 const Sec1 = () => {
   return (
-    <div className='relative w-full lg:w-1/3 h-80 lg:h-full'>
-      <div className="absolute bottom-36 md:bottom-3 right-24 md:right-12 ">
+    <div className='relative w-full h-full flex items-center justify-center'>
+      <div className="absolute bottom-36 md:bottom-3 right-24 md:right-12">
         <Image
           src="/images/protected.png"
           alt="protected Image 3"
@@ -41,7 +40,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute top-1/2 -left-10 md:left-8 z-20 transform -translate-y-1/2">
+      <div className="absolute top-1/2 left-0 md:left-8 z-20 transform -translate-y-1/2">
         <Image
           src="/images/mobile-mockup.png"
           alt="mobile mockup Image 1"
@@ -50,7 +49,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-0 right-4 md:right-24 z-20 ">
+      <div className="absolute bottom-0 right-4 md:right-24 z-20">
         <Image
           src="/images/cart.png"
           alt="Foreground Image 2"
@@ -60,7 +59,7 @@ const Sec1 = () => {
         />
       </div>
     </div>
-  )
-}
+  );
+};
 
-export default Sec1
+export default Sec1;
