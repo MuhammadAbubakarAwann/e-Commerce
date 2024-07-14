@@ -1,13 +1,9 @@
-/* components/ProductInfo.css */
-
-
 .quantity-button {
   border: none;
   color: black;
   cursor: pointer;
-
   padding: 0.5rem 1rem;
-  border-radius: 1 rem;
+  border-radius: 1rem; /* Corrected spacing */
   font-size: large;
   font-weight: bold;
   transition: background-color 0.2s ease;
@@ -25,4 +21,3 @@
   width: 2rem;
   border: none;
 }
-

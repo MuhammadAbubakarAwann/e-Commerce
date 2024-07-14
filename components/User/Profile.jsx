@@ -51,7 +51,7 @@ const ProfilePage = () => {
 
   return (
     <div className="flex">
-      <div className="flex-grow container-fluid  p-6 ml-64"> {/* Added ml-64 to offset the content */}
+      <div className="flex-grow container-fluid  p-6 lg:ml-64"> {/* Added ml-64 to offset the content */}
         <div className="bg-white rounded-lg shadow-md overflow-hidden">
           <div className="p-4 border-b">
             <h2 className="text-xl font-bold">My Profile</h2>

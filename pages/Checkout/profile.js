@@ -6,7 +6,7 @@ import "../../src/app/globals.css"
 
 const profile = () => {
   return (
-    <div className='flex'>
+    <div className=''>
     <Sidebar/>
     <div className='flex-grow'>
     <ProfilePage/>

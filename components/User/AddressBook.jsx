@@ -11,7 +11,7 @@ const AddressBook = () => {
 
   return (
     <div className="flex">
-      <div className="flex-grow container mx-auto p-6 ml-64">
+      <div className="flex-grow container mx-auto p-6 lg:ml-64">
         <h2 className="text-xl font-bold mb-4">Address Book</h2>
         <div className="flex flex-wrap -m-2 text-black">
           {addresses.map((address, index) => (

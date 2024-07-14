@@ -6,7 +6,7 @@ import Sidebar from '../../components/User/Sidebar'
 
 const address = () => {
   return (
-    <div className='flex'>
+    <div className=''>
         <Sidebar/>
         <div className='flex-grow'>
         <AddressBook/>

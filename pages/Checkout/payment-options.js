@@ -5,9 +5,9 @@ import Sidebar from '../../components/User/Sidebar'
 
 const payment = () => {
   return (
-    <div className='flex'>
+    <div className=''>
     <Sidebar/>
-    <div className='flex-grow mt-10'>
+    <div className='flex-grow lg:mt-10'>
     <PaymentOptions/>
     </div>
 </div>

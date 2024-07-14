@@ -1,8 +1,8 @@
 // components/Checkout.js
 import React from 'react';
 import CartSteps from '../../components/Checkout/CartSteps';
-import ContactForm from '../../components/Checkout//ContactForm';
-import OrderSummary from '../../components/Checkout//OrderSummary';
+import ContactForm from '../../components/Checkout/ContactForm';
+import OrderSummary from '../../components/Checkout/OrderSummary';
 import "../../src/app/globals.css"
 
 

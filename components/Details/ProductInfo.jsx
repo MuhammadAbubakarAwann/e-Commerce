@@ -1,6 +1,7 @@
 // components/ProductInfo.js
 "use client";
 import React, { useState } from 'react';
+import Head from 'next/head';
 import { FaHeart } from 'react-icons/fa';
 
 import './ProductInfo.css'; // Import CSS file for custom styles
@@ -100,30 +101,31 @@ const ProductInfo = () => {
 
       <div className="mb-4">
         <label className="block text-gray-700">Quantity</label>
-        <div className='flex'>
-        <div className="flex items-center mt-2 bg-gray-100 w-20 pr-40 rounded-2xl">
-          <button onClick={decrementQuantity} className="quantity-button ml-3">
-            -
-          </button>
-          <input
-            type="text"
-            value={quantity}
-            readOnly
-            className="quantity-input mx-2 bg-gray-100 outline-none border-none"
-          />
-          <button onClick={incrementQuantity} className="quantity-button">
-            +
-          </button>
+        <div className="flex items-center mt-2">
+          <div className="flex items-center  bg-gray-100 rounded-2xl">
+            <button onClick={decrementQuantity} className="quantity-button ml-3">
+              -
+            </button>
+            <input
+              type="text"
+              value={quantity}
+              readOnly
+              className="quantity-input  bg-gray-100 outline-none border-none text-center"
+            />
+            <button onClick={incrementQuantity} className="quantity-button">
+              +
+            </button>
           </div>
-          <p className='w-20 ml-4 mt-4 text-xs'>Only 20 items left in stock</p>
-          <span className="flex items-center text-gray-400 text-3xl mt-2 ml-20">
+          <p className="text-xs ml-2 mt-2 sm:mt-0 mr-2">Only 20 items left in stock</p>
+          <div className="flex items-center ml-auto mt-2 sm:mt-0 ">
+            <span className="text-gray-400 lg:text-3xl sm:text-lg ">
               <FaHeart />
-              
             </span>
-            <p className='mt-4 ml-2'>Wishlist</p>
+            <p className="ml-2">Wishlist</p>
+          </div>
         </div>
       </div>
-
+      
       <div className="flex flex-col sm:flex-row gap-2 sm:gap-4 mb-4 mt-10">
         <button className="btn w-full sm:w-1/2 rounded-full bg-green-800 text-white">Buy Now</button>
         <button className="btn btn-outline w-full sm:w-1/2 rounded-full">Add to Cart</button>

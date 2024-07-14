@@ -21,10 +21,12 @@ const OrderPlaced = ({ orderId, orderDetails, shippingDetails }) => (
       </Link>
     </div>
     <div className="container h-0.5 w-full bg-gray-100 mb-4 mt-10"></div>
-    <div className="container flex w-full mt-8 bg-white shadow-lg p-6 rounded-lg">
-      <OrderDetails orderDetails={orderDetails} />
-      <ShippingDetails shippingDetails={shippingDetails} />
-    </div>
+<div className="container flex flex-col sm:flex-row w-full mt-8 bg-white shadow-lg p-6 rounded-lg">
+  <OrderDetails orderDetails={orderDetails} />
+  <div className=""></div> {/* Optional margin for small screens */}
+  <ShippingDetails shippingDetails={shippingDetails} />
+</div>
+
 
   </div>
 );
