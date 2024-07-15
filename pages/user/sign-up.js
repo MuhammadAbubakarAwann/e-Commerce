@@ -9,7 +9,7 @@ const Sign_Up = () => (
       <title>user-signin</title>
     </Head>
     <main >
-      <SignUp/>
+      <SignUp />
     </main></>
 );
 

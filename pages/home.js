@@ -2,9 +2,6 @@
 import Head from 'next/head';
 import Layout from '../components/Layout';
 import "../src/app/globals.css";
-import Card1 from '../components/main-section/cards/Card1';
-import Card2 from '../components/main-section/cards/Card2';
-import Card3 from '../components/main-section/cards/Card3';
 import Features from '../components/features-newsLetter/Features';
 import Newsletter from '../components/features-newsLetter/NewsLetter';
 import End from '../components/Footer/End';
@@ -18,8 +15,8 @@ const Home = () => (
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <main >
-      <section>
-        <div className="px-2 py-4 sm:px-3 sm:py-3 md:px-5 md:py-5">
+      <section >
+        <div className="px-2 py-4 sm:px-3 sm:py-3 md:px-5 md:py-5 ">
           <Banner />
         </div>
         <div className="px-2 pt-0 pb-6 sm:px-6 sm:pb-8 md:px-5 md:pb-12 ">
@@ -32,7 +29,7 @@ const Home = () => (
           Why You Choose Us!
         </h2>
         <Features />
-        <div className='p-14'>
+        <div className='p-4 md:p-8 lg:p-14'>
           <Newsletter />
         </div>
       </section>

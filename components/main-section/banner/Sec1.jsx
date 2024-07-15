@@ -1,10 +1,11 @@
+// components/Sec1.jsx
 import React from 'react';
 import Image from 'next/image';
 
 const Sec1 = () => {
   return (
-    <div className='relative w-full h-full flex items-center justify-center'>
-      <div className="absolute bottom-36 md:bottom-3 right-24 md:right-12">
+    <div className='relative w-full h-full flex items-center mt-48 md:mt-0 justify-center'>
+      <div className="absolute bottom-36 md:bottom-3 right-24 md:right-12  ">
         <Image
           src="/images/protected.png"
           alt="protected Image 3"
@@ -13,7 +14,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-52 md:bottom-44 right-32 md:right-36">
+      <div className="absolute bottom-52 md:bottom-32 lg:bottom-44 right-32 md:right-36">
         <Image
           src="/images/true.png"
           alt="true Image 3"
@@ -22,7 +23,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-40 md:bottom-20 right-6 md:right-9">
+      <div className="absolute bottom-40 md:bottom-56 lg:bottom-20 right-6 md:right-16 lg:right-9">
         <Image
           src="/images/verified.png"
           alt="verified Image 3"
@@ -31,7 +32,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-48 md:bottom-36 right-16 md:right-16">
+      <div className="absolute bottom-48 md:bottom-44 lg:bottom-36 right-16 md:right-0 lg:right-16">
         <Image
           src="/images/delivery.png"
           alt="delivery Image 4"
@@ -49,7 +50,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-0 right-4 md:right-24 z-20">
+      <div className="absolute bottom-0 md:bottom-20 lg:bottom-0 right-0 md:right-0 lg:right-0 md:w-1/2  z-20">
         <Image
           src="/images/cart.png"
           alt="Foreground Image 2"

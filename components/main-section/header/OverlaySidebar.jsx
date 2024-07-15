@@ -4,7 +4,7 @@ import Icons from './Icons';
 import NavLinks from './NavLinks';
 
 const OverlaySidebar = ({ isOpen, onClose }) => (
-  <div className={`fixed inset-0 bg-black bg-opacity-50 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
+  <div className={`fixed inset-0 bg-black z-50 bg-opacity-50 transition-transform transform ${isOpen ? 'translate-x-0' : 'translate-x-full'} md:hidden`}>
     <div className="absolute top-0 right-0 bg-[#0A2428] w-64 h-full p-4">
       <button onClick={onClose} className="text-[#00AAC2] focus:outline-none mb-4">
         <svg

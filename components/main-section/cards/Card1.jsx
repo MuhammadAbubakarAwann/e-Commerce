@@ -9,7 +9,7 @@ import smoke from '../../../public/images/smoke.png';
 
 const Card1 = () => {
   return (
-    <div className='relative w-full h-[220px] bg-[#00AAC2] rounded-xl overflow-hidden z-10'>
+    <div className='relative w-full h-[220px] bg-[#00AAC2] rounded-xl overflow-hidden z-20'>
       <div className=" flex justify-center items-center flex-col absolute top-[8%] left-[4%]">
         <button className=' bg-black text-white  rounded-lg text-md p-1 px-2'>Learn More</button>
         <h1 className='  font-krona text-2xl font-normal text-[#ffffffd0] text-center mt-1 '>
