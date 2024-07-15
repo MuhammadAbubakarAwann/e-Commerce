@@ -1,12 +1,13 @@
-// components/Layout.jsx
 import Header from './header/Header';
+import Footer from './Footer/Footer';
 
 const Layout = ({ children }) => (
-  <div>
+  <div className="flex flex-col min-h-screen">
     <Header />
-    <div className="content">
+    <div className="flex-grow">
       {children}
     </div>
+    <Footer />
   </div>
 );
 

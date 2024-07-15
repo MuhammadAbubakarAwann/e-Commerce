@@ -1,4 +1,6 @@
 import React from 'react';
+import Head from 'next/head';
+import Layout from '../../components/Layout';
 import OrderPlaced from '../../components/OrderPlaced/OrderPlaced'; // Adjust the path as per your file structure
 
 // Example data
@@ -18,7 +20,15 @@ const shippingDetails = {
 };
 
 const OrderPlacedPage = () => (
-  <OrderPlaced orderId={orderId} orderDetails={orderDetails} shippingDetails={shippingDetails} />
+
+  <Layout>
+    <Head>
+      <title>OrderPlaced</title>
+    </Head>
+    <main className="p-4">
+    <OrderPlaced orderId={orderId} orderDetails={orderDetails} shippingDetails={shippingDetails} />
+    </main>
+  </Layout>
 );
 
 export default OrderPlacedPage;

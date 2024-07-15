@@ -4,7 +4,7 @@ const Wishlist = () => {
   return (
     <div className="flex">
     <div className="container mx-auto px-4 lg:ml-64">
-    <div className=" mt-10">
+    <div className=" ">
     <h2 className="text-xl font-bold mb-4">My Orders</h2>
     {/* Select All Section */}
     <div className="flex flex-col md:flex-row items-center justify-between p-4 bg-gray-50 rounded-lg mb-4 mt-10">

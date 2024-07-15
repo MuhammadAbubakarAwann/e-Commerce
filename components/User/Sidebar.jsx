@@ -22,7 +22,7 @@ const Sidebar = ({ activeTab }) => {
   };
 
   return (
-    <div className="lg:flex lg:flex-col lg:bg-secondary lg:text-white lg:h-screen lg:w-56 lg:fixed lg:left-0 lg:top-0 lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out">
+    <div className="lg:flex lg:flex-col lg:bg-secondary lg:text-white lg:w-56  lg:left-0 lg:top-0 lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out">
       {/* Hamburger Icon/Button for Small Screens - Hidden when sidebar is open */}
       {!isOpen && (
         <button className="text-xl font-bold mt-10 ml-6" onClick={toggleSidebar}>
@@ -31,9 +31,9 @@ const Sidebar = ({ activeTab }) => {
       )}
 
       {/* Sidebar Content */}
-      <div className={` lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out lg:translate-x-0 lg:flex lg:flex-col lg:bg-secondary lg:text-white lg:h-screen lg:w-56 lg:fixed lg:left-0 lg:top-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'} bg-secondary`}>
+      <div className={`lg:transform lg:transition-transform lg:duration-300 lg:ease-in-out lg:translate-x-0 lg:flex lg:flex-col lg:bg-secondary lg:text-white lg:w-56 lg:fixed lg:left-0 lg:top-0 ${isOpen ? 'translate-x-0' : '-translate-x-full'} bg-secondary`}>
         {/* Close Icon/Button */}
-        <button className="  lg:hidden absolute top-4 right-4 text-xl text-white" onClick={toggleSidebar}>
+        <button className="lg:hidden absolute top-4 right-4 text-xl text-white" onClick={toggleSidebar}>
           <FaIcons.FaTimes />
         </button>
 
@@ -41,7 +41,6 @@ const Sidebar = ({ activeTab }) => {
         <div className="p-4 border-b border-gray-700">
           <p className="text-xl font-bold text-white">Hello, UserName</p>
         </div>
-
 
         {/* Manage my Account for both Large Screen and Hamburger Sidebar */}
         <div className="p-4 text-white">
@@ -54,7 +53,7 @@ const Sidebar = ({ activeTab }) => {
             {links.map((link) => (
               <li
                 key={link.path}
-                className={`flex items-center mb-10 mt- ml-2 ${router.pathname === link.path ? 'text-primary' : ''}`}
+                className={`flex items-center mb-10 ml-2 ${router.pathname === link.path ? 'text-primary' : ''}`}
               >
                 {link.icon}
                 <Link href={link.path} legacyBehavior>
@@ -67,8 +66,7 @@ const Sidebar = ({ activeTab }) => {
           </ul>
         </div>
       </div>
-      </div>
-  
+    </div>
   );
 };
 
