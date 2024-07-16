@@ -75,45 +75,49 @@ const Shop = () => {
 
   return (
     <div className='py-3 px-4'>
-      <h2 className='ml-5 text-3xl font-bold mb-6'>Shop Our Top Categories</h2>
-      <div className='relative flex items-center'>
+      <h2 className='ml-14 text-3xl font-bold mb-6 text-center sm:text-left'>Shop Our Top Categories</h2>
+      <div className='relative flex items-center m-7 mr-10'>
+        {/* Left arrow button */}
         {showLeftArrow && (
           <button
             onClick={handlePrevClick}
-            className='absolute left-0 p-2 text-black text-2xl rounded-full bg-black bg-opacity-20 hover:bg-opacity-40 transition-colors duration-300'
+            className='absolute left-0 p-2 text-black text-2xl rounded-full bg-black bg-opacity-20 hover:bg-opacity-40 transition-colors duration-300 z-10 hidden sm:block'
           >
             &lt;
           </button>
         )}
+        {/* Category container */}
         <div
           ref={scrollContainerRef}
-          className='flex overflow-x-auto scroll-smooth mx-10'
+          className='flex overflow-x-auto scroll-smooth mx-0 sm:mx-10'
           style={{ scrollBehavior: 'smooth' }}
         >
           {categories.map((category) => (
             <div
               key={category.name}
-              className='flex-shrink-0 relative w-[350px] h-[309px] rounded-xl overflow-hidden m-7 group'
+              className='flex-shrink-0 relative w-[200px] sm:w-[300px] h-[150px] sm:h-[250px] rounded-xl overflow-hidden sm:m-10 md:m-10 lg:m-10 group'
             >
               <Image
                 src={category.image}
                 alt={category.name}
                 fill
                 style={{ objectFit: 'cover' }}
-                className='mr-5 rounded-lg transition-transform duration-500 transform group-hover:scale-105'
+                className='rounded-lg transition-transform duration-500 transform group-hover:scale-105'
               />
-              <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center rounded-lg bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500'>
-                <h2 className='mb-56 text-white text-2xl font-bold transition-transform duration-500 group-hover:scale-110'>
+              {/* Category name overlay */}
+              <div className='absolute top-0 left-0 right-0 bottom-0 flex items-center justify-center md:items-start md:justify-start p-2 md:p-4 rounded-lg bg-black bg-opacity-0 group-hover:bg-opacity-50 transition-all duration-500'>
+                <h2 className='text-white lg:ml-24 text-base sm:text-lg font-bold transition-transform duration-500 group-hover:scale-110'>
                   {category.name}
                 </h2>
               </div>
             </div>
           ))}
         </div>
+        {/* Right arrow button */}
         {showRightArrow && (
           <button
             onClick={handleNextClick}
-            className='absolute right-0 p-2 text-black text-2xl rounded-full bg-black bg-opacity-20 hover:bg-opacity-40 transition-colors duration-300'
+            className='absolute right-0 p-2 text-black text-2xl rounded-full bg-black bg-opacity-20 hover:bg-opacity-40 transition-colors duration-300 z-10 hidden sm:block'
           >
             &gt;
           </button>
