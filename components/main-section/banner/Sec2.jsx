@@ -3,7 +3,7 @@ import React from 'react';
 
 const Sec2 = () => {
   return (
-    <div className='relative flex h-[100%] items-center justify-center flex-col   md:p-6 lg:p-0 mt-10 md:mt-0 lg:mb-0 mb-10 md:mb-0 lg:mt-0 text-center'>
+    <div className='relative flex h-[100%] items-center justify-center flex-col md:p-6 lg:p-0 mt-10 md:mt-0 lg:mb-0 mb-10 md:mb-0 lg:mt-0 text-center'>
       <h2 className='font-montserrat text-[#ffffffd4] font-bold text-2xl mt-20 md:mt-0'>Your One-Stop Destination</h2>
       <h3 className='font-montserrat text-[#ffffffbb] font-medium'>for All Your Shopping Needs</h3>
       <h1 className='font-montserrat text-[#ffffffe9] font-extrabold text-xl md:text-xl lg:text-3xl mt-2'>Welcome to Smile Shop!</h1>

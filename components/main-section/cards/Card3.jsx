@@ -16,8 +16,8 @@ import open_box from '../../../public/images/open-box.png';
 const Card3 = () => {
   return (
     <div className='relative w-full h-[220px] bg-[#00AAC2] rounded-xl overflow-hidden '>
-            <div className=" flex justify-center items-center flex-col absolute top-[8%] left-[4%]">
-        <button className=' bg-black text-white  rounded-lg text-md p-1 px-2'>Learn More</button>
+       <div className=" flex justify-center items-center flex-col absolute top-[8%] left-[4%]">
+        <button className=' bg-black text-white  rounded-xl text-md p-1 px-2'>Learn More</button>
         <h1 className='  font-krona text-2xl font-normal text-[#ffffffd0] text-center mt-1 '>
           check out <br /> the best
         </h1>

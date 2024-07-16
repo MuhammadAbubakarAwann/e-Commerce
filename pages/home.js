@@ -7,6 +7,9 @@ import Newsletter from '../components/features-newsLetter/NewsLetter';
 import End from '../components/Footer/End';
 import Banner from '../components/main-section/banner/Banner';
 import CardsWrapper from '../components/main-section/cards/CardsWrapper';
+import CategoriesSlider from '../components/main-section/top-categories-slider/CategoriesSlider';
+import NewArrivals from '../components/arrivals/Arrivals';
+import Selling from '../components/selling/Selling';
 
 const Home = () => (
   <Layout>
@@ -20,12 +23,25 @@ const Home = () => (
           <Banner />
         </div>
         <div className="px-2 pt-0 pb-6 sm:px-6 sm:pb-8 md:px-5 md:pb-12 ">
-          <CardsWrapper/>
+          <CardsWrapper />
         </div>
+
+        <div ><CategoriesSlider /></div>
+      </section>
+      <section className='bg-[#00abc23a]'>
+
+        <div><NewArrivals /></div>
       </section>
 
       <section>
-        <h2 className="text-[40px] font-bold  text-center text-[#00AAC2] mb-8">
+        <h2 className="text-4xl md:text-5xl font-bold  text-center text-[#00AAC2] p-6 mt-5">
+          Our Best Selling Items
+        </h2>
+        <div className='flex justify-center items-center'><Selling /></div>
+      </section>
+
+      <section>
+        <h2 className="text-4xl md:text-5xl font-bold  text-center text-[#00AAC2] p-6 mt-5">
           Why You Choose Us!
         </h2>
         <Features />

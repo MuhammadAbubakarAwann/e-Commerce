@@ -50,7 +50,7 @@ const Sec1 = () => {
           className="object-contain"
         />
       </div>
-      <div className="absolute bottom-0 md:bottom-20 lg:bottom-0 right-0 md:right-0 lg:right-0 md:w-1/2  z-20">
+      <div className="absolute bottom-0 md:bottom-20 lg:bottom-0 right-0 md:right-0 lg:right-8 md:w-1/2  z-20">
         <Image
           src="/images/cart.png"
           alt="Foreground Image 2"
