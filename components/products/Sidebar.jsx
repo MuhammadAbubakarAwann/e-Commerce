@@ -7,7 +7,7 @@ const Sidebar = () => {
   const locations = ['Islamabad', 'Lahore', 'Karachi', 'Peshawar'];
 
   return (
-    <div className="p-10 pt-8 w-64 bg-gray-100 mt-8 ml-5">
+    <div className="p-4  w-64 bg-gray-100 h-[950px] mt-5 ml-5">
       <h2 className="text-2xl font-bold mb-4">Filters</h2>
 
       <div className="mb-6">
@@ -43,13 +43,14 @@ const Sidebar = () => {
         ))}
       </div>
 
+      {/* Rating */}
       <div className="mb-6">
         <h3 className="text-xl font-semibold mb-2">Rating</h3>
         <div className="flex flex-col space-y-1">
           {[5, 4, 3, 2, 1].map((rating, index) => (
             <div key={index} className="flex items-center">
               {[...Array(5)].map((_, i) => (
-                <Star key={i} className={`text-yellow-500 ${i < rating ? 'fill-current' : 'text-gray-300'}`} />
+                <Star key={i} className={i < rating ? 'text-yellow-500' : 'text-gray-300'} />
               ))}
             </div>
           ))}

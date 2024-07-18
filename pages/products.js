@@ -1,22 +1,29 @@
-import Head from 'next/head'; // Import Head from next/head
-import "../src/app/globals.css";
+import Head from 'next/head';
 import Layout from '../components/Layout';
-import Sidebar from "../components/products/Sidebar";
+import "../src/app/globals.css";
+import Sidebar from '../components/products/Sidebar';
 import Selling from '../components/products/Selling';
 
-const Products = () => {
+
+
+const Product = () => {
   return (
     <Layout>
+      <Head>
+        <title>Product Page</title>
+        <meta name="description" content="Product Page" />
+      </Head>
       <main>
-        <section className="flex">
-          <div className="flex-grow p-4">
+        <section>
+          <div className='flex'>
             <Sidebar />
+            <Selling/>
           </div>
-          <div><Selling/></div>
         </section>
+        
       </main>
     </Layout>
   );
 };
 
-export default Products;
+export default Product;

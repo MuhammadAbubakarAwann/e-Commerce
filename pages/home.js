@@ -9,6 +9,7 @@ import Card3 from '../components/cards/Card3';
 import NewArrivals from '../components/arrivals/Arrivals';
 import Selling from '../components/selling/Selling';
 import Shop from '../components/shop/Shop';
+import Sidebar from '../components/products/Sidebar';
 
 
 
@@ -38,7 +39,6 @@ const Home = () => (
      <section>
       <div><Selling/></div>
      </section>
-
     </main>
   </Layout>
 );
