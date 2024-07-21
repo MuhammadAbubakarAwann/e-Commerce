@@ -30,7 +30,7 @@ const OrderSummary = () => {
       </div>
       <div>
         <button className="w-full bg-secondary text-white p-2 rounded hover:bg-primary">
-          Confirm Order
+          Proceed to Checkout
         </button>
         <button className="w-full text-primary p-2 text-sm mt-2 flex items-center justify-center">
           <FaArrowLeft className="mr-2" /> Continue Shopping

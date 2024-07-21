@@ -2,11 +2,12 @@
 import Header from './main-section/header/Header';
 
 const Layout = ({ children }) => (
-  <div>
+  <div className="flex flex-col min-h-screen">
     <Header />
-    <div className="content">
+    <div className="flex-grow">
       {children}
     </div>
+    <Footer />
   </div>
 );
 

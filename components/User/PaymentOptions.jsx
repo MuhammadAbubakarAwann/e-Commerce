@@ -39,7 +39,7 @@ const PaymentOptions = () => {
 
   return (
     <div className="flex">
-    <div className="container mx-auto px-4 ml-64">
+    <div className="container mx-auto px-4 lg:ml-64">
       <div className="p-6 bg-white shadow-md rounded-lg">
         <h2 className="text-xl font-bold mb-6">My Payment Options</h2>
         <ul className="space-y-4">
@@ -55,7 +55,7 @@ const PaymentOptions = () => {
                 <img src={getImage(option.type)} alt={option.type} className="w-16 h-12 mr-4 mb-4 sm:mb-0" />
               </div>
               <div className="flex flex-col sm:flex-row items-center justify-between w-full">
-                <span className="text-lg mb-2 sm:mb-0">{option.number}</span>
+                <span className="text-lg mb-2 sm:mb-0 ml-4">{option.number}</span>
                 <button
                   className="text-red-600 hover:text-red-800 mt-2 sm:mt-0 sm:ml-4"
                   onClick={() => handleDelete(option.id)}
