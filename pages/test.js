@@ -2,9 +2,7 @@ import React from 'react'
 
 const test = () => {
   return (
-    <div>
-      by younas sdasdasd
-    </div>
+    <div>ali and arham abubakar asad</div>
   )
 }
 

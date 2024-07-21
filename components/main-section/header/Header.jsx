@@ -46,7 +46,10 @@ const Header = () => {
           <Icons />
         </div>
       </div>
-      <OverlaySidebar isOpen={sidebarOpen} onClose={toggleSidebar} />
+      <div className='z-50'>
+        <OverlaySidebar isOpen={sidebarOpen} onClose={toggleSidebar} />
+
+      </div>
     </header>
   );
 };
