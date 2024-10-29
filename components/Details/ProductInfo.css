@@ -1,0 +1,23 @@
+.quantity-button {
+  border: none;
+  color: black;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem; /* Corrected spacing */
+  font-size: large;
+  font-weight: bold;
+  transition: background-color 0.2s ease;
+}
+
+.quantity-button:hover {
+  background-color: #b0b0b0;
+  border-radius: 1rem;
+}
+
+.quantity-input {
+  text-align: center;
+  font-size: large;
+  font-weight: bold;
+  width: 2rem;
+  border: none;
+}
